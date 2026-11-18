@@ -1,0 +1,5 @@
+Tabler @tabler/core 1.7.1
+https://registry.npmjs.org/@tabler/core/-/core-1.7.1.tgz
+Package sha256: 1dad9578dddc5c50bcbe055c8cfa93c92a0f1fc52a37fe673965aec993005e98
+Licence source (package omits root licence): https://raw.githubusercontent.com/tabler/tabler/600e268473dc5194a42891acb9d0298f204debc9/LICENSE
+Licence sha256: 4f88a82d13be3c5c63a12c5631eae914aa4381b6dc17641bf1ab85f3f8f6c8a5

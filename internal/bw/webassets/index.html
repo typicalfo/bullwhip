@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bullwhip · Project dashboard</title>
+    <link rel="stylesheet" href="/assets/tabler.min.css" />
+    <link rel="stylesheet" href="/assets/dashboard.css" />
+    <script defer src="/assets/tabler.min.js"></script>
+    <script defer src="/assets/dashboard.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <header class="navbar">
+        <div class="container-xl">
+          <a class="navbar-brand" href="/"
+            >Bullwhip <span class="badge bg-blue-lt ms-2">LOCAL</span></a
+          ><span id="identity" class="text-secondary"></span>
+        </div>
+      </header>
+      <main class="page-wrapper">
+        <div class="container-xl">
+          <div class="page-header">
+            <div class="page-pretitle">Repository coordination</div>
+            <h1 id="project-title" class="page-title">Project dashboard</h1>
+            <p id="description" class="text-secondary"></p>
+            <p id="status" class="text-secondary" role="status">Connecting…</p>
+          </div>
+          <nav class="nav nav-pills mb-4" aria-label="Dashboard views">
+            <button class="nav-link active" data-view="board">Board</button
+            ><button class="nav-link" data-view="todo">What’s left</button
+            ><button class="nav-link" data-view="shape">Plan & resources</button
+            ><button class="nav-link" data-view="progress">Progress</button
+            ><button class="nav-link" data-view="time">Time</button
+            ><button class="nav-link" data-view="workers">Agents</button
+            ><button class="nav-link" data-view="attention">
+              Questions & notes
+            </button>
+          </nav>
+          <div id="error" class="alert alert-danger" hidden role="alert"></div>
+          <div id="resources-banner" class="alert alert-warning" hidden role="status"></div>
+          <section id="board"></section>
+          <section id="todo" hidden></section>
+          <section id="shape" hidden></section>
+          <section id="progress" hidden></section>
+          <section id="time" hidden></section>
+          <section id="workers" hidden></section>
+          <section id="attention" hidden></section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+body {
+  background: #f4f6fa;
+}
+.page-wrapper {
+  padding-bottom: 3rem;
+}
+.navbar-brand {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+.board-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.task-card {
+  margin-bottom: 0.8rem;
+}
+.task-card .card-body {
+  padding: 1rem;
+}
+.task-card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.metric {
+  font-size: 2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+}
+.chart {
+  width: 100%;
+  height: 240px;
+}
+.chart text {
+  font: 12px system-ui;
+  fill: #667382;
+}
+.chart polyline {
+  fill: none;
+  stroke: #206bc4;
+  stroke-width: 3;
+}
+.chart line {
+  stroke: #ccd4de;
+}
+.table td {
+  white-space: normal;
+}
+.card {
+  overflow-wrap: anywhere;
+}
+textarea {
+  min-height: 5rem;
+}
+@media (max-width: 1000px) {
+  .board-grid {
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+  }
+}
+@media (max-width: 560px) {
+  .board-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav {
+    gap: 0.25rem;
+  }
+}
+
+.task-card[data-activity="in progress"], .task-card[data-activity="in review"] { border-left: 3px solid var(--tblr-primary); }
+.task-card[data-activity="claimed"], .task-card[data-activity="idle"] { border-left: 3px solid var(--tblr-secondary); }
+.task-card[data-activity="stale"] { border-left: 3px solid var(--tblr-warning); }
+details { margin: 0.8rem 0; } details details { margin-left: 1rem; } summary { cursor: pointer; padding: 0.3rem 0; }
